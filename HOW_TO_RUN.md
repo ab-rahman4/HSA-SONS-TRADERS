@@ -39,7 +39,6 @@ If your instructor prefers running over a local server:
 | **`products.html`** | **Timber & Door Catalog** | **Interactive Category Filter Tabs** (Raw Timber, Solid Wood, Ply, PVC/Fiber) & **Specs Modal Lightbox**. |
 | **`gallery.html`** | **Project Portfolio** | Real door installations across Lahore with **Click-to-Enlarge Lightbox**. |
 | **`contact.html`** | **Contact & Quote** | Branch addresses, timings, and **Client-Side Form Validation** (name, 11-digit phone, email). |
-| **`viva_preparation_guide.md`** | **Viva Study Guide** | Line-by-line explanation of all HTML tags, CSS Box Model/Flexbox/Grid, and JS functions. |
 
 ---
 
