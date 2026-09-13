@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#EBE3D5"/>
+    </linearGradient>
+    <linearGradient id="plank1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4D2812"/>
+      <stop offset="50%" stop-color="#6A381A"/>
+      <stop offset="100%" stop-color="#4D2812"/>
+    </linearGradient>
+    <linearGradient id="plank2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6A381A"/>
+      <stop offset="50%" stop-color="#381B09"/>
+      <stop offset="100%" stop-color="#6A381A"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="750" fill="url(#bgGrad)"/>
+  <rect x="0" y="680" width="600" height="70" fill="#D8CFBF"/>
+  <line x1="0" y1="680" x2="600" y2="680" stroke="#C4B9A5" stroke-width="2"/>
+
+  <!-- Stacked Timber Planks / Beams -->
+  <g filter="url(#shadow)">
+    <!-- Base Pallet -->
+    <rect x="100" y="580" width="400" height="30" rx="3" fill="#3D2012"/>
+
+    <!-- Planks Stack Layer 1 -->
+    <rect x="120" y="510" width="360" height="60" rx="2" fill="url(#plank1)" stroke="#221105" stroke-width="2"/>
+    <line x1="240" y1="510" x2="240" y2="570" stroke="#1B0E05" stroke-width="2"/>
+    <line x1="360" y1="510" x2="360" y2="570" stroke="#1B0E05" stroke-width="2"/>
+
+    <!-- Planks Stack Layer 2 -->
+    <rect x="130" y="440" width="340" height="60" rx="2" fill="url(#plank2)" stroke="#221105" stroke-width="2"/>
+    <line x1="245" y1="440" x2="245" y2="500" stroke="#1B0E05" stroke-width="2"/>
+    <line x1="355" y1="440" x2="355" y2="500" stroke="#1B0E05" stroke-width="2"/>
+
+    <!-- Planks Stack Layer 3 -->
+    <rect x="140" y="370" width="320" height="60" rx="2" fill="url(#plank1)" stroke="#221105" stroke-width="2"/>
+    <line x1="250" y1="370" x2="250" y2="430" stroke="#1B0E05" stroke-width="2"/>
+    <line x1="350" y1="370" x2="350" y2="430" stroke="#1B0E05" stroke-width="2"/>
+
+    <!-- Standing Solid Planks in Background -->
+    <rect x="170" y="90" width="60" height="260" rx="3" fill="url(#plank1)" stroke="#221105" stroke-width="2"/>
+    <rect x="250" y="70" width="60" height="280" rx="3" fill="url(#plank2)" stroke="#221105" stroke-width="2"/>
+    <rect x="330" y="80" width="60" height="270" rx="3" fill="url(#plank1)" stroke="#221105" stroke-width="2"/>
+    <rect x="410" y="100" width="50" height="250" rx="3" fill="url(#plank2)" stroke="#221105" stroke-width="2"/>
+
+    <!-- Grain Details -->
+    <path d="M185 100 Q195 200 185 330" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+    <path d="M265 85 Q275 190 265 330" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+    <path d="M345 95 Q355 200 345 330" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Tag -->
+  <rect x="30" y="25" width="160" height="30" rx="15" fill="#2C1608"/>
+  <text x="110" y="45" font-family="'Arial', sans-serif" font-size="11" font-weight="bold" fill="#D4AF37" text-anchor="middle">DOOR FRAMES</text>
+
+  <!-- Bottom Description Card -->
+  <rect x="35" y="640" width="530" height="85" rx="8" fill="#FFFFFF" fill-opacity="0.96" stroke="#E2D7C8" stroke-width="1"/>
+  <text x="55" y="672" font-family="'Georgia', serif" font-size="20" font-weight="bold" fill="#2C1608">Solid Hardwood Chokhats & Frames</text>
+  <text x="55" y="696" font-family="'Arial', sans-serif" font-size="13" fill="#665544">Sagwan & Diyar Door Frames • Precise Rebates & Seasoned</text>
+  <text x="55" y="714" font-family="'Arial', sans-serif" font-size="11" fill="#997755">HSA &amp; SONS • Ravi Road Timber Yard, Lahore • Seasoned Sawn Timber</text>
+</svg>
