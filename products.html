@@ -53,15 +53,37 @@
   </header>
 
   <!-- ========================================================================
-       Page Banner
+       Hero Section: Materials & Doors Catalog
        ======================================================================== -->
-  <header class="page-banner">
+  <section class="page-hero" style="background-image: url('images/seasoned-timber-and-planks.png');" aria-label="Timber and Doors Catalog">
     <div class="container">
-      <span class="section-subtitle" style="color: var(--color-accent);">Materials &amp; Doors Showcase</span>
-      <h1>Timber &amp; Doors Catalog</h1>
-      <p>A comprehensive architectural showcase of our seasoned raw hardwoods, solid wood doors, engineered plies, and waterproof solutions.</p>
+      <div class="page-hero-content">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span>Timber &amp; Doors Catalog</span>
+        </nav>
+        <span class="page-hero-tag">RAW HARDWOODS &amp; CUSTOM DOORS</span>
+        <h1 class="page-hero-title">Architectural Timber &amp; Door Collections</h1>
+        <p class="page-hero-desc">Explore pure kiln-dried Sagwan (Teak), European Ash, and Royal Mahogany planks alongside bespoke solid carved doors, engineered plies, and waterproof PVC solutions.</p>
+        <div class="hero-btn-group">
+          <a href="#catalog" class="btn btn-primary">Filter Door Showcase (13)</a>
+          <a href="#comparisonTable" class="btn btn-secondary">Compare Wood Species</a>
+        </div>
+        <div class="page-hero-badges">
+          <div class="page-hero-badge-item">
+            <span>🌲</span> <span><strong>Raw Hardwoods:</strong> Sawn Planks &amp; Logs</span>
+          </div>
+          <div class="page-hero-badge-item">
+            <span>🚪</span> <span><strong>Solid Wood:</strong> Hand-Carved Joinery</span>
+          </div>
+          <div class="page-hero-badge-item">
+            <span>💧</span> <span><strong>100% Waterproof:</strong> PVC &amp; HD Fiber</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
   <!-- ========================================================================
        Main Content
@@ -69,7 +91,7 @@
   <main>
 
     <!-- 1. Interactive Category Filter Navigation -->
-    <section class="section-spacing">
+    <section id="catalog" class="section-spacing">
       <div class="container">
         
         <div class="section-title-wrap">
@@ -446,7 +468,7 @@
     </section>
 
     <!-- 2. Wood Materials Comparison Table (HTML5 Semantic Table) -->
-    <section class="section-spacing bg-alt">
+    <section id="comparisonTable" class="section-spacing bg-alt">
       <div class="container">
         
         <div class="section-title-wrap">

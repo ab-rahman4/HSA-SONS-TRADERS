@@ -281,7 +281,113 @@ img {
   color: var(--color-gray-600);
 }
 
-/* Page Banner for Internal Pages */
+/* --------------------------------------------------------------------------
+   Page Hero Section (Inner Pages: About, Products, Gallery, Contact)
+   -------------------------------------------------------------------------- */
+.page-hero {
+  position: relative;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-white);
+  padding: 75px 0;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(20, 10, 5, 0.94) 0%, rgba(20, 10, 5, 0.82) 55%, rgba(20, 10, 5, 0.5) 100%);
+  z-index: 1;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+}
+
+.page-hero-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--color-gray-200);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.page-hero-breadcrumb a {
+  color: var(--color-accent);
+  transition: var(--transition);
+}
+
+.page-hero-breadcrumb a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.page-hero-breadcrumb .separator {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.page-hero-tag {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.page-hero-title {
+  font-size: 3rem;
+  color: var(--color-white);
+  margin-bottom: 15px;
+  line-height: 1.18;
+}
+
+.page-hero-desc {
+  font-size: 1.12rem;
+  color: #dfd8cf;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.page-hero-badges {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.page-hero-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #dfd8cf;
+}
+
+.page-hero-badge-item strong {
+  color: var(--color-accent);
+}
+
+/* Page Banner for Internal Pages (Fallback) */
 .page-banner {
   background: linear-gradient(rgba(31, 20, 14, 0.88), rgba(59, 29, 12, 0.92)), url('../images/workshop.svg') center/cover no-repeat;
   color: var(--color-white);
@@ -1070,6 +1176,24 @@ img {
     font-size: 2.2rem;
   }
 
+  /* Page Hero (Tablet) */
+  .page-hero {
+    min-height: 380px;
+    padding: 60px 0;
+  }
+
+  .page-hero-title {
+    font-size: 2.35rem;
+  }
+
+  .page-hero-desc {
+    font-size: 1.05rem;
+  }
+
+  .page-hero-badges {
+    gap: 16px;
+  }
+
   .category-cards-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
@@ -1202,7 +1326,6 @@ img {
     height: 10px;
   }
 
-  /* Page Banners */
   .page-banner {
     padding: 45px 0;
   }
@@ -1214,6 +1337,36 @@ img {
 
   .page-banner p {
     font-size: 0.95rem;
+  }
+
+  /* Page Hero (Mobile) */
+  .page-hero {
+    min-height: 340px;
+    padding: 45px 0;
+  }
+
+  .page-hero::before {
+    background: linear-gradient(180deg, rgba(20, 10, 5, 0.95) 0%, rgba(20, 10, 5, 0.88) 100%);
+  }
+
+  .page-hero-title {
+    font-size: 1.85rem;
+    margin-bottom: 12px;
+  }
+
+  .page-hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .page-hero-badges {
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .page-hero-badge-item {
+    font-size: 0.84rem;
   }
 
   /* Section Spacing & Titles */
@@ -1415,6 +1568,43 @@ img {
 
   .page-banner p {
     font-size: 0.88rem;
+  }
+
+  /* Page Hero (Phone View) */
+  .page-hero {
+    min-height: auto;
+    padding: 38px 0;
+  }
+
+  .page-hero-breadcrumb {
+    font-size: 0.78rem;
+    margin-bottom: 10px;
+  }
+
+  .page-hero-tag {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .page-hero-title {
+    font-size: 1.55rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .page-hero-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .page-hero-badges {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 18px;
+    padding-top: 14px;
   }
 
   /* Filter Navigation Buttons */

@@ -53,15 +53,37 @@
   </header>
 
   <!-- ========================================================================
-       Page Banner
+       Hero Section: About Our Heritage & Sawmill
        ======================================================================== -->
-  <header class="page-banner">
+  <section class="page-hero" style="background-image: url('images/hero-section.png');" aria-label="About HSA and Sons Heritage">
     <div class="container">
-      <span class="section-subtitle" style="color: var(--color-accent);">Our History &amp; Craftsmanship</span>
-      <h1>About HSA &amp; SONS</h1>
-      <p>Four decades of uncompromising dedication to timber quality, bespoke door engineering, and customer trust across Lahore.</p>
+      <div class="page-hero-content">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span>About Us</span>
+        </nav>
+        <span class="page-hero-tag">ESTABLISHED 1984 • LAHORE</span>
+        <h1 class="page-hero-title">40+ Years of Timber Mastery &amp; Heritage</h1>
+        <p class="page-hero-desc">Four decades of uncompromising dedication to hardwood seasoning, chokhat joinery, and architectural door craftsmanship across Lahore.</p>
+        <div class="hero-btn-group">
+          <a href="#heritageStory" class="btn btn-primary">Discover Our Story</a>
+          <a href="#lahoreBranches" class="btn btn-secondary">Our 3 Lahore Branches</a>
+        </div>
+        <div class="page-hero-badges">
+          <div class="page-hero-badge-item">
+            <span>🪵</span> <span><strong>Kiln Seasoning:</strong> 10%–12% Moisture</span>
+          </div>
+          <div class="page-hero-badge-item">
+            <span>📍</span> <span><strong>3 Locations:</strong> Ravi Rd, Ferozepur Rd &amp; Gulberg</span>
+          </div>
+          <div class="page-hero-badge-item">
+            <span>🚪</span> <span><strong>15,000+:</strong> Doors Installed</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
   <!-- ========================================================================
        Main Content
@@ -69,7 +91,7 @@
   <main>
 
     <!-- 1. The Heritage Story -->
-    <section class="section-spacing">
+    <section id="heritageStory" class="section-spacing">
       <div class="container">
         <div class="heritage-story-grid">
           
@@ -129,7 +151,7 @@
     </section>
 
     <!-- 3. Our 3 Lahore Branches (Semantic HTML Table) -->
-    <section class="section-spacing">
+    <section id="lahoreBranches" class="section-spacing">
       <div class="container">
         <div class="section-title-wrap">
           <span class="section-subtitle">Visit Our Facilities</span>
