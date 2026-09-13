@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact HSA & SONS Lahore. Request a customized door quote, find showroom directions for Ravi Road, Ferozepur Road and Gulberg branches.">
+  <title>Contact Us &amp; Request a Quote | HSA &amp; SONS Lahore</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Top Bar
+       ======================================================================== -->
+  <aside class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <span>📍 <strong>Direct Helpline:</strong> +92 300 4567890</span>
+        <span>✉️ <strong>Email:</strong> info@hsaandsons.com</span>
+      </div>
+      <div>
+        <span>🕒 Mon - Sat: 9:00 AM - 8:00 PM</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Header & Navigation Bar
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="logo" title="HSA & SONS Home">
+          <img src="images/logo.svg" alt="HSA & SONS Doors and Wood Specialists">
+        </a>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products &amp; Woods</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li><a href="contact.html#quoteForm" class="btn-nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Page Banner
+       ======================================================================== -->
+  <header class="page-banner">
+    <div class="container">
+      <span class="section-subtitle" style="color: var(--color-accent);">Get In Touch</span>
+      <h1>Contact HSA &amp; SONS</h1>
+      <p>Visit any of our 3 Lahore branches or fill out the quotation form below for free door measurements, wood advice, and pricing estimates.</p>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Main Content: Contact Cards & Form
+       ======================================================================== -->
+  <main>
+    <section class="section-spacing">
+      <div class="container">
+
+        <div class="contact-layout-grid">
+
+          <!-- Left Column: Branch Locations & Contact Info -->
+          <div class="contact-info-cards">
+
+            <div class="info-card">
+              <h4>🏭 Head Workshop &amp; Seasoning Yard</h4>
+              <p><strong>Address:</strong> Plot 42, Main Timber Market, Ravi Road, Lahore</p>
+              <p><strong>Services:</strong> Raw wood seasoning, saw milling, bulk wholesale, custom solid wood fabrication.</p>
+              <p><strong>Phone:</strong> +92 300 4567890 | <strong>PTCL:</strong> (042) 37654321</p>
+            </div>
+
+            <div class="info-card">
+              <h4>🏢 Main Display Showroom</h4>
+              <p><strong>Address:</strong> Main Ferozepur Road (Near Chungi Amar Sidhu Stop), Lahore</p>
+              <p><strong>Services:</strong> Full door gallery, polish finish boards, melamine &amp; Malaysian ply displays.</p>
+              <p><strong>Phone:</strong> +92 321 8976543</p>
+            </div>
+
+            <div class="info-card">
+              <h4>🏬 Gulberg Retail &amp; Design Desk</h4>
+              <p><strong>Address:</strong> Shop 18, Commercial Block, Main Market, Gulberg II, Lahore</p>
+              <p><strong>Services:</strong> Architect consultations, catalogs, PVC bathroom doors, hardware locks.</p>
+              <p><strong>Phone:</strong> +92 333 1122334</p>
+            </div>
+
+            <div class="info-card" style="background-color: var(--color-gray-100); border-left-color: var(--color-primary);">
+              <h4>🕒 Operating Hours Across All Branches</h4>
+              <p><strong>Monday to Saturday:</strong> 9:00 AM – 8:00 PM</p>
+              <p><strong>Friday Prayer Break:</strong> 1:00 PM – 2:30 PM</p>
+              <p><strong>Sunday:</strong> Closed (Workshop maintenance)</p>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Quotation Form -->
+          <div class="contact-form-box">
+            
+            <h3 style="font-size: 1.8rem; margin-bottom: 8px;">Request a Custom Price Quote</h3>
+            <p style="margin-bottom: 25px; color: var(--color-gray-600);">Please submit your requirements. Our representative from the nearest branch will call you with a detailed estimate.</p>
+
+            <!-- Dynamic Feedback Alert (Success / Error) -->
+            <div id="formAlert" class="form-alert" role="alert"></div>
+
+            <!-- Form element validated client-side by main.js -->
+            <form id="quoteForm" novalidate>
+              
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="fullName">Full Name <span style="color: var(--color-error);">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Muhammad Usman" required>
+                <span class="error-message"></span>
+              </div>
+
+              <!-- Phone & Email Grid -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+                
+                <!-- Phone Number -->
+                <div class="form-group">
+                  <label for="phoneNumber">Mobile / WhatsApp Number <span style="color: var(--color-error);">*</span></label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="e.g. 03001234567" required>
+                  <span class="error-message"></span>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-group">
+                  <label for="emailAddress">Email Address <span style="color: var(--color-error);">*</span></label>
+                  <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="e.g. usman@gmail.com" required>
+                  <span class="error-message"></span>
+                </div>
+
+              </div>
+
+              <!-- Door Category Selection -->
+              <div class="form-group">
+                <label for="doorType">Door Category Interested In <span style="color: var(--color-error);">*</span></label>
+                <select id="doorType" name="doorType" class="form-control" required>
+                  <option value="">-- Please Select a Door Category --</option>
+                  <option value="Solid Sagwan (Teak)">Solid Sagwan (Teak Wood) Double / Single Door</option>
+                  <option value="Seasoned Ash Wood">Seasoned Ash Wood Contemporary Door</option>
+                  <option value="Royal Mahogany">Royal Mahogany Solid Hardwood Door</option>
+                  <option value="Diyar Wood">Traditional Diyar (Deodar) Cedar Door</option>
+                  <option value="Malaysian Plywood">Malaysian Plywood Flush Door</option>
+                  <option value="Melamine Finished">Textured Melamine Scratch-Proof Flush Door</option>
+                  <option value="HDX Architectural">HDX Heavy-Duty Solid Board Door</option>
+                  <option value="Waterproof PVC">100% Waterproof PVC Bathroom Door</option>
+                  <option value="Fiber Door">Reinforced High-Density Fiber Door</option>
+                  <option value="Multiple / Whole House">Complete House Package (Main + Interior + Bathrooms)</option>
+                </select>
+                <span class="error-message"></span>
+              </div>
+
+              <!-- Preferred Branch -->
+              <div class="form-group">
+                <label for="preferredBranch">Preferred Lahore Branch for Consultation</label>
+                <select id="preferredBranch" name="preferredBranch" class="form-control">
+                  <option value="Ferozepur Road">Ferozepur Road Showroom (Central Lahore)</option>
+                  <option value="Ravi Road">Ravi Road Timber Market (Head Workshop)</option>
+                  <option value="Gulberg">Main Market Gulberg II (Retail Desk)</option>
+                </select>
+              </div>
+
+              <!-- Measurements / Details -->
+              <div class="form-group">
+                <label for="projectDetails">Approximate Measurements &amp; Notes <span style="color: var(--color-error);">*</span></label>
+                <textarea id="projectDetails" name="projectDetails" rows="4" class="form-control" placeholder="Mention number of doors, approximate dimensions (e.g. 3.5ft x 7ft), wood preference, or if you need on-site measurement." required></textarea>
+                <span class="error-message"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1.05rem;">
+                Submit Quote Request &rarr;
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Map / Showroom Guide Section -->
+    <section class="section-spacing bg-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-subtitle">Showroom Map &amp; Guidance</span>
+          <h2 class="section-title">Visit Our Facilities in Lahore</h2>
+          <p class="section-desc">All our three locations have dedicated parking, sample display wings, and seasoned wood inspection blocks.</p>
+        </div>
+
+        <div style="background-color: var(--color-white); border-radius: 6px; padding: 30px; box-shadow: var(--box-shadow); text-align: center; border: 1px dashed var(--color-accent);">
+          <h3 style="margin-bottom: 10px;">🗺️ Interactive Navigation Assistance</h3>
+          <p style="max-width: 650px; margin: 0 auto 20px auto; color: var(--color-gray-600);">
+            Heading our way? Share your location on WhatsApp with our central helpline at <strong>+92 300 4567890</strong> and our representative will instantly send you direct Google Maps pinned locations to your nearest showroom branch.
+          </p>
+          <a href="https://wa.me/923004567890" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            💬 Open WhatsApp Location Assistant
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <a href="index.html" style="display: inline-block; margin-bottom: 15px;">
+            <img src="images/logo.svg" alt="HSA & SONS" style="height: 48px; filter: brightness(0) invert(1);">
+          </a>
+          <p>HSA &amp; SONS is a family-owned timber and door manufacturing business based in Lahore with over 40+ years of woodworking heritage. We specialize in solid wood, engineered plies, and waterproof doors.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Our Heritage</a></li>
+            <li><a href="products.html">Door Catalog &amp; Woods</a></li>
+            <li><a href="gallery.html">Project Gallery</a></li>
+            <li><a href="contact.html">Contact &amp; Branches</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Door Varieties</h3>
+          <ul>
+            <li><a href="products.html">Solid Sagwan / Teak</a></li>
+            <li><a href="products.html">Seasoned Ash Wood</a></li>
+            <li><a href="products.html">Royal Mahogany Doors</a></li>
+            <li><a href="products.html">Malaysian &amp; Melamine Ply</a></li>
+            <li><a href="products.html">Waterproof PVC &amp; Fiber</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our 3 Lahore Branches</h3>
+          <ul class="branch-list">
+            <li>
+              <strong>Branch 1 (Head Workshop):</strong>
+              Ravi Road Timber Market, Lahore
+            </li>
+            <li>
+              <strong>Branch 2 (Showroom):</strong>
+              Main Ferozepur Road (Near Chungi), Lahore
+            </li>
+            <li>
+              <strong>Branch 3 (Retail Outlet):</strong>
+              Main Market, Gulberg II, Lahore
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 HSA &amp; SONS (Doors &amp; Wood Specialists). All Rights Reserved. | Web Technologies Assignment 01</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
