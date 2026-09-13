@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A2511"/>
+      <stop offset="100%" stop-color="#2C1608"/>
+    </linearGradient>
+  </defs>
+  <!-- Door Icon -->
+  <rect x="8" y="10" width="44" height="60" rx="3" fill="url(#woodGrad)" stroke="url(#goldGrad)" stroke-width="2"/>
+  <rect x="14" y="16" width="14" height="22" rx="1" fill="#3D1E0E" stroke="#5E3116" stroke-width="1.5"/>
+  <rect x="32" y="16" width="14" height="22" rx="1" fill="#3D1E0E" stroke="#5E3116" stroke-width="1.5"/>
+  <rect x="14" y="42" width="14" height="22" rx="1" fill="#3D1E0E" stroke="#5E3116" stroke-width="1.5"/>
+  <rect x="32" y="42" width="14" height="22" rx="1" fill="#3D1E0E" stroke="#5E3116" stroke-width="1.5"/>
+  <circle cx="44" cy="42" r="2.5" fill="url(#goldGrad)"/>
+  
+  <!-- Text -->
+  <text x="64" y="38" font-family="'Georgia', 'Times New Roman', serif" font-size="26" font-weight="bold" fill="#2C1608" letter-spacing="1.5">HSA &amp; SONS</text>
+  <text x="66" y="56" font-family="'Arial', sans-serif" font-size="10.5" font-weight="600" fill="#AA771C" letter-spacing="3">DOORS &amp; WOOD SPECIALISTS</text>
+  <text x="66" y="68" font-family="'Arial', sans-serif" font-size="8.5" fill="#777" letter-spacing="1">EST. 1984 • 40+ YEARS IN LAHORE</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="woodShop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B1810"/>
+      <stop offset="100%" stop-color="#190D08"/>
+    </linearGradient>
+    <linearGradient id="amberLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#woodShop)"/>
+  
+  <g fill="#6E3B1B" stroke="#4A2510" stroke-width="2">
+    <rect x="60" y="280" width="220" height="35" rx="3"/>
+    <rect x="60" y="320" width="220" height="35" rx="3"/>
+    <rect x="60" y="360" width="220" height="35" rx="3"/>
+    <rect x="60" y="400" width="220" height="35" rx="3"/>
+  </g>
+  <g fill="#8C4E28" stroke="#5C3117" stroke-width="2">
+    <rect x="320" y="240" width="240" height="40" rx="3"/>
+    <rect x="320" y="285" width="240" height="40" rx="3"/>
+    <rect x="320" y="330" width="240" height="40" rx="3"/>
+    <rect x="320" y="375" width="240" height="40" rx="3"/>
+  </g>
+  
+  <rect x="580" y="280" width="180" height="170" fill="#3D2012" stroke="#241108" stroke-width="3"/>
+  <rect x="560" y="260" width="220" height="30" fill="#A46332" rx="4"/>
+  
+  <rect width="800" height="500" fill="url(#amberLight)"/>
+  
+  <rect x="50" y="50" width="360" height="90" rx="8" fill="#110905" fill-opacity="0.85" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="70" y="85" font-family="'Georgia', serif" font-size="22" font-weight="bold" fill="#E8B960">HSA &amp; SONS Workshop</text>
+  <text x="70" y="112" font-family="'Arial', sans-serif" font-size="14" fill="#DDD">40+ Years of Timber Seasoning &amp; Handcrafting</text>
+  <text x="70" y="128" font-family="'Arial', sans-serif" font-size="12" fill="#AAA">Ravi Road Timber Market, Lahore</text>
+</svg>
